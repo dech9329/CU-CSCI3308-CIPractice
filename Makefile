@@ -1,6 +1,6 @@
-# Andy Sayler
+# Dechen Chhemorito
 # CI Practice
-# Summer 2014
+# Fall 2018
 
 CC = gcc
 CFLAGS = -c -g -Wall -Wextra
@@ -23,9 +23,13 @@ geometry.o: geometry.c geometry.h
 	$(CC) $(CFLAGS) $< -o $@
 
 dep:
+	sudo apt-get update 
 	sudo apt-get install check
 
 clean:
 	$(RM) *.o
 	$(RM) geometry_test
 	$(RM) *~
+	
+test: geometry_test
+	./geometry_test
