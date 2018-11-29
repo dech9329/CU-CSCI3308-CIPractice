@@ -1,5 +1,5 @@
 #Dechen Chhemorito
 
-language:c
+language: c
 script: make deposit && make && make test
 compiler: -gcc
