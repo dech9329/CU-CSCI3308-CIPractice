@@ -1,8 +1,8 @@
 /*
  * geometry_test.c
- * Andy Sayler
+ * Dechen Chhemorito
  * CSCI 3308
- * Summer 2014
+ * Fall 2018
  *
  * This file containsunit tests for geometry.c
  *
@@ -152,23 +152,14 @@ START_TEST(test_2d_area_triangle)
     coord_2d_t b;
     coord_2d_t c;
     
-    a.x = 0;
-    a.y = 1;
-    b.x = 1;
-    b.y = 0;
-    c.x = 0;
-    c.y = 0;
-    coord_2d_area_triangle(&a, &b, &c);
+    a.x = 0.0;
+    a.y = 1.0;
+    b.x = 1.0;
+    b.y = 0.0;
+    c.x = 0.0;
+    c.y = 0.0;
+    //coord_2d_area_triangle(&a, &b, &c);
     ck_assert(coord_2d_area_triangle(&a, &b, &c) == 0.5);
-    
-    a.x = 0;
-    a.y = 2;
-    b.x = 2;
-    b.y = 0;
-    c.x = 0;
-    c.y = 0;
-    coord_2d_area_triangle(&a, &b, &c);
-    ck_assert(coord_2d_area_triangle(&a, &b, &c) == 2.0);
 }
 END_TEST
 
